@@ -10,7 +10,7 @@
     </div>
   </nav>
 
-  <div class="flex text-center items-center justify-center">
+  <div class="flex text-center justify-center">
     <form @submit.prevent="searchItunes(searchText)">
       <input
         type="text"
@@ -22,7 +22,7 @@
       <!--Button-->
       <button
         @click="searchItunes(searchText)"
-        class="mb-8 py-2 px-5 text-white rounded-full baseline bg-black hover:bg-darkBlue shadow-lg shadow-cyan-500/50"
+        class="py-2 px-5 text-white rounded-full baseline bg-black hover:bg-darkBlue shadow-lg shadow-cyan-500/50"
       >
         Search
       </button>
@@ -30,9 +30,9 @@
   </div>
 
   <!--AlbumSection--> 
-  <section class="columns-xs overflow-x-hidden text-center">
+  <section class="flex flex-wrap items-center justify-evenly my-6 gap-4">
     <div v-if="data.results" class="base"></div>
-    <div v-for="album in data.results" :key="album.artistId" class="pb-5">
+    <div v-for="album in data.results" :key="album.artistId" class="border border-zinc-800 rounded-md p-2 min-w-[275px] md:max-w-[275px] hover:border-zinc-600 duration-100 ease-in-out">
       <LP :album="album" />
     </div>
   </section>
