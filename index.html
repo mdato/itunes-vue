@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+    screens: {
+      sm: '480px',
+      md: '768px',
+      lg: '976px',
+      xl: '1440px',
+    },
+    extend: {
+      colors: {
+        brightRed: 'hsl(12, 88%, 59%)',
+        brightRedLight: 'hsl(12, 88%, 69%)',
+        brightRedSupLight: 'hsl(12, 88%, 95%)',
+        darkBlue: 'hsl(228, 39%, 23%)',
+        darkGrayishBlue: 'hsl(227, 12%, 61%)',
+        veryDarkBlue: 'hsl(233, 12%, 13%)',
+        veryPaleRed: 'hsl(13, 100%, 96%)',
+        veryLightGray: 'hsl(0, 0%, 98%)',
+      },
+    },
+  },
+      }
+    </script>
+    <title>Search Album by Itunes API</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
