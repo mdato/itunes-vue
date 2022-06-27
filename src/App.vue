@@ -6,7 +6,7 @@
       <!--Logo-->
       <div class="">
         <img src="./img/logo.png" alt="itunes logo" class="w-300 h-20" />
-      </div>      
+      </div>
     </div>
   </nav>
 
@@ -29,10 +29,15 @@
     </form>
   </div>
 
-  <!--AlbumSection--> 
-  <section class="flex flex-wrap items-center justify-evenly my-6 gap-4">
-    <div v-if="data.results" class="base"></div>
-    <div v-for="album in data.results" :key="album.artistId" class="border border-zinc-800 rounded-md p-2 min-w-[275px] md:max-w-[275px] hover:border-zinc-600 duration-100 ease-in-out">
+  <!--AlbumSection-->
+  <section
+    class="flex flex-wrap items-center align-middle justify-evenly my-6 gap-4"
+  >
+    <div
+      v-for="album in data.results"
+      :key="album.artistId"
+      class="border border-zinc-800 rounded-md p-2 min-w-[275px] md:max-w-[275px] hover:border-zinc-600 duration-100 ease-in-out"
+    >
       <LP :album="album" />
     </div>
   </section>
@@ -65,31 +70,29 @@ export default defineComponent({
 
 <style>
 body {
-   background-color: rgb(15 23 42);
+  background-color: rgb(15 23 42);
 }
-
 
 ::-webkit-scrollbar {
-    width: 10px;
-    border: 1px dashed blue;
-}
- 
-::-webkit-scrollbar-track {
-    border-radius: 5px;
-}
- 
-::-webkit-scrollbar-thumb {
-    border-radius: 6px;
+  width: 10px;
+  border: 1px dashed blue;
 }
 
-::-webkit-scrollbar-corner{
-    border-radius:5px;
+::-webkit-scrollbar-track {
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-corner {
+  border-radius: 5px;
 }
 
 /* The vertical thumb*/
 ::-webkit-scrollbar-thumb:vertical {
-    height: 50px;
-    background-color: rgb(21, 52, 85);
+  height: 50px;
+  background-color: rgb(21, 52, 85);
 }
-
 </style>

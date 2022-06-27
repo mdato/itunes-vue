@@ -1,6 +1,6 @@
 <template>
   <div
-    class="columns-1 content-center break-inside-avoid-column w-auto text-slate-400 bg-slate-900"
+    class="columns-1 content-center w-auto text-slate-400 bg-slate-900"
   >
     <a :href="album.artistViewUrl" target="_blank">
       <h4
