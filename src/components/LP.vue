@@ -47,7 +47,5 @@ export default defineComponent({
 <style>
 img {
   display: inline !important;
-  align-items: center !important;
-  justify-content: center !important;
 }
 </style>
