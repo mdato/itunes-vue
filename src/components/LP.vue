@@ -3,7 +3,9 @@
     class="columns-1 content-center break-inside-avoid-column w-auto text-slate-400 bg-slate-900"
   >
     <a :href="album.artistViewUrl" target="_blank">
-      <h4 class="text-lg font-bold text-center flex-auto flex-wrap px-12 pb-3 hover:scale-125 hover:text-slate-500">
+      <h4
+        class="text-lg font-bold text-center flex-auto flex-wrap px-12 pb-3 hover:scale-125 hover:text-slate-500"
+      >
         {{ album.artistName }}
       </h4></a
     >
