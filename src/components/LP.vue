@@ -48,6 +48,6 @@ export default defineComponent({
 
 <style>
 img {
-  display: inline;
+  display: inline !important;
 }
 </style>
